@@ -26,6 +26,34 @@ body{
   position:absolute; inset:0;
   background: radial-gradient(1200px 600px at 40% 40%, rgba(0,0,0,.1), rgba(0,0,0,.4) 60%, rgba(0,0,0,.6) 100%);
 }
+  /* HEADLINE */
+.headline{
+  position:absolute;
+  top:2rem;
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(0,0,0,.45);
+  backdrop-filter: blur(8px);
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:12px;
+  padding:.7rem 1.6rem;
+  font-size:1.1rem;
+  font-weight:500;
+  letter-spacing:.02em;
+  color:#fff;
+  text-align:center;
+  box-shadow:0 4px 12px rgba(0,0,0,.4);
+  z-index:20;
+}
+
+@media (max-width:480px){
+  .headline{
+    font-size:.9rem;
+    padding:.5rem 1rem;
+    top:1rem;
+  }
+}
+
 .center{position:relative; z-index:10; height:100%; display:grid; place-items:center;}
 .stack{display:flex; flex-direction:column; align-items:center; gap:1.5rem;}
 
@@ -108,6 +136,7 @@ body{
   <div class="tint" aria-hidden="true"></div>
 
   <main class="center">
+  <div class="headline">We're open at Bryant Park Winter Village! October 24 – January 4</div>
     <div class="stack">
       <!-- Logo inside glassy oval -->
       <div class="logo-wrap">
